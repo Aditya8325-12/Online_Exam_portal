@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Test_page">
+
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/app"
+        android:id="@+id/Toolbar"/>
+
+
+
+    <SeekBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginHorizontal="20dp"
+        android:id="@+id/Seekbar"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Question 1 Of 10 "
+        android:textSize="28sp"
+        android:fontFamily="@font/ppm"
+        android:textColor="@color/black"
+        android:layout_marginTop="30dp"
+        android:id="@+id/questionNo"
+        android:gravity="center"
+        android:layout_marginHorizontal="20dp"
+        />
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="170dp"
+        android:layout_marginHorizontal="20dp"
+        android:background="@color/app"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:background="@drawable/shape"
+            android:layout_marginHorizontal="10dp">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Q1. What is your name "
+                android:textSize="20dp"
+                android:fontFamily="@font/ppm"
+                android:id="@+id/qestion"
+                android:layout_margin="20dp"/>
+
+
+
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="40dp"
+                android:id="@+id/RadioGroup"
+                android:layout_marginTop="50dp">
+
+
+                <RadioButton
+                    android:id="@+id/option1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="5dp"
+                    android:fontFamily="@font/ppm"
+
+                    android:textSize="20dp"
+                    android:text="Option 1" />
+                <RadioButton
+                    android:id="@+id/option2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp"
+                    android:fontFamily="@font/ppm"
+                    android:layout_marginVertical="5dp"
+                    android:text="Option 2" />
+                <RadioButton
+                    android:id="@+id/option3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp"
+                    android:fontFamily="@font/ppm"
+
+                    android:layout_marginVertical="5dp"
+                    android:text="Option 3" />
+                <RadioButton
+                    android:id="@+id/option4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp"
+                    android:layout_marginVertical="5dp"
+                    android:fontFamily="@font/ppm"
+                    android:text="Option 4" />
+
+
+            </RadioGroup>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginRight="20dp"
+                android:gravity="end"
+                >
+
+
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Submit"
+                    android:id="@+id/submit"
+                    android:fontFamily="@font/ppm"
+                    android:visibility="gone"
+                    android:textColor="@color/white"
+                    android:background="@drawable/button"
+                    android:layout_marginHorizontal="5dp"
+                    android:layout_marginTop="20dp"/>
+
+                <Button
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:text="next"
+                    android:id="@+id/next"
+                    android:fontFamily="@font/ppm"
+                    android:textColor="@color/white"
+                    android:background="@drawable/button"
+                    android:layout_marginTop="20dp"/>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

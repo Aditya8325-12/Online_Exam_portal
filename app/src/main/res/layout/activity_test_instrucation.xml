@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Test_instrucation">
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/app"
+        android:id="@+id/Toolbar"/>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_weight="0.6">
+
+
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="50dp"
+            android:textSize="20dp"
+            android:fontFamily="@font/ppm"
+            android:layout_height="wrap_content"
+            android:text="instructionsfor attempting test\n\n
+1) Only one test can be given at time.\n\n
+2) all questions are compulsory.\n\n
+3) No negative marking for incorrect answers.\n\n
+4) For attempting next questions, previous solutions of previous questions are compulsory.  "/>
+
+    </LinearLayout>
+
+
+
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/Start"
+        android:layout_gravity="center"
+        android:fontFamily="@font/ppm"
+        android:background="@drawable/button"
+        android:text="Start"
+        android:layout_marginBottom="50dp"/>
+
+</LinearLayout>

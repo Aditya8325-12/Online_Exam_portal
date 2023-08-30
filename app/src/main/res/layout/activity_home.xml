@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/darwar"
+    tools:context=".Home">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+
+        >
+
+        <androidx.appcompat.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/app"
+            android:id="@+id/Toolbar"/>
+
+
+        <LinearLayout
+            android:id="@+id/chapter"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_marginTop="80dp"
+            android:background="@drawable/box"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:padding="10dp"
+            android:layout_marginHorizontal="30dp"
+            android:elevation="10dp"
+            android:shadowColor="#7F000000"
+            android:shadowDx="1"
+            android:shadowDy="1">
+
+            <ImageView
+                android:layout_width="70dp"
+                android:layout_height="80dp"
+                android:src="@drawable/bookmark"/>
+
+
+            <TextView
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:text="Chapter Wies  Tests"
+                android:textSize="28dp"
+                />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/week"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/box"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:padding="10dp"
+            android:layout_marginHorizontal="30dp"
+            android:elevation="10dp"
+            android:shadowColor="#7F000000"
+            android:shadowDx="1"
+            android:shadowDy="1">
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="80dp"
+                android:src="@drawable/calendar"/>
+
+            <TextView
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:text="Week Wies  Tests"
+                android:textSize="28dp"
+                />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/progress"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/box"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginHorizontal="30dp"
+            android:elevation="10dp"
+            android:shadowColor="#7F000000"
+            android:shadowDx="1"
+            android:shadowDy="1">
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="80dp"
+                android:src="@drawable/newbie"/>
+
+
+            <TextView
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:text="Progress "
+                android:textSize="28dp"
+                />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+    <com.google.android.material.navigation.NavigationView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:id="@+id/nav_view"
+        app:menu="@menu/navigation_menu"
+        app:headerLayout="@layout/header"
+        android:layout_gravity="start"/>
+
+
+</androidx.drawerlayout.widget.DrawerLayout>
