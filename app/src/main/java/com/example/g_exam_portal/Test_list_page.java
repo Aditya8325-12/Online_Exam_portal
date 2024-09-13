@@ -302,7 +302,6 @@ public class Test_list_page extends AppCompatActivity {
             context=c;
             this.head11=header1;
             this.head22=header2;
-
         }
 
 
